@@ -22,7 +22,7 @@ class ClientTestCase(unittest.TestCase):
         customer.first_name = "Joe"
         customer.last_name = "Bloggs"
         customer.email = "name@xyz.com.au"
-        customer.address = "123 Someplace Street, Somewhere ACT"
+        customer.address = "35 rue de la fédération, Somewhere ACT".decode('utf-8')
         customer.postcode = "2609"
         customer.invoice_description = "Testing"
         customer.invoice_reference = "INV120394"
