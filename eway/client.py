@@ -183,7 +183,7 @@ class EwayPaymentClient(object):
         
         for key, value in data.items():
             subelement = ET.Element(key)
-            subelement.text = str(value)
+            subelement.text = unicode(value)
             root.append(subelement)
         return ET.tostring(root)
 
