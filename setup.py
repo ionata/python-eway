@@ -1,3 +1,4 @@
+#!/usr/bin/env python
 """
 Based entirely on Django's own ``setup.py``.
 """
@@ -48,10 +49,7 @@ for dirpath, dirnames, filenames in os.walk(tagging_dir):
 
 # Dynamically calculate the version based on tagging.VERSION
 version_tuple = __import__('eway').VERSION
-if version_tuple[2] is not None:
-    version = "%d.%d_%s" % version_tuple
-else:
-    version = "%d.%d" % version_tuple[:2]
+version = '.'.join(map(str, version_tuple))
 
 setup(
     name = 'python-eway',
