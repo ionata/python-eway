@@ -104,8 +104,7 @@ class EwayPaymentClient(object):
         @author: Alex Hayes <alex@alution.com>
         """
         if not reference:
-            prefix = credit_card.last_name
-            prefix.replace(" ", "").lower()
+            prefix = credit_card.holder_name.replace("_", "").lower() + '_'
             reference = self.get_reference(prefix)
             
         payment = Payment(total_amount=amount,
