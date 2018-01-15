@@ -1,1 +1,1 @@
-httplib2==0.8
+httplib2==0.10.3

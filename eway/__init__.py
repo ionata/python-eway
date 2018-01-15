@@ -1,1 +1,1 @@
-VERSION = (0, 2, 'ionata-2',)
+VERSION = (0, 2, 'ionata-3',)
